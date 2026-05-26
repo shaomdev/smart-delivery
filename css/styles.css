@@ -85,3 +85,70 @@ body {
   background-color: #333;
 }
 /* header - finished */
+
+.hero {
+  padding: 100px 0 80px;
+  background-color: var(--bg-main);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 640px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+}
+
+.hero__btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.hero__btn--primary {
+  background-color: var(--text-main);
+  color: #fff;
+}
+
+.hero__btn--primary:hover {
+  background-color: #333;
+}
+
+.hero__btn--secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+}
+
+.hero__btn--secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #dcdcdc;
+}
+/* hero - finished */
