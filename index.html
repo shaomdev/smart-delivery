@@ -59,6 +59,7 @@
         </div>
       </section>
 
+      <!-- section - features -->
       <section class="features" id="tariffs">
         <div class="container">
           <div class="features__grid">
@@ -94,6 +95,89 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section - order -->
+      <section class="order" id="order">
+        <div class="container">
+          <div class="order__inner">
+            <h2 class="order__title">Рассчитать стоимость доставки</h2>
+            <p class="order__subtitle">
+              Заполните данные, чтобы мгновенно узнать цену и вызвать курьера
+            </p>
+
+            <form class="order-form">
+              <!-- Поле: Откуда -->
+              <div class="order-form__group">
+                <label for="from-address" class="order-form__label"
+                  >Откуда забрать</label
+                >
+                <input
+                  type="text"
+                  id="from-address"
+                  class="order-form__input"
+                  placeholder="Улица, дом, квартира / офис"
+                  required
+                />
+              </div>
+
+              <!-- Поле: Куда -->
+              <div class="order-form__group">
+                <label for="to-address" class="order-form__label"
+                  >Куда привезти</label
+                >
+                <input
+                  type="text"
+                  id="to-address"
+                  class="order-form__input"
+                  placeholder="Город, улица, дом, квартира"
+                  required
+                />
+              </div>
+
+              <!-- Поля в один ряд: Вес и Тариф -->
+              <div class="order-form__row">
+                <div class="order-form__group">
+                  <label for="weight" class="order-form__label"
+                    >Вес посылки (кг)</label
+                  >
+                  <input
+                    type="number"
+                    id="weight"
+                    class="order-form__input"
+                    placeholder="До 5 кг"
+                    min="0.1"
+                    max="5"
+                    step="0.1"
+                    required
+                  />
+                </div>
+
+                <div class="order-form__group">
+                  <label for="tariff" class="order-form__label"
+                    >Тариф доставки</label
+                  >
+                  <select
+                    id="tariff"
+                    class="order-form__input order-form__select"
+                    required
+                  >
+                    <option value="express">⚡️ Экспресс (за 30 минут)</option>
+                    <option value="standard" selected>
+                      📦 Стандартный (в течение дня)
+                    </option>
+                    <option value="cargo">🚚 Грузовой (крупные посылки)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Кнопка отправки -->
+              <button type="submit" class="order-form__submit-btn">
+                Посчитать стоимость
+              </button>
+            </form>
           </div>
         </div>
       </section>
