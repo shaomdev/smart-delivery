@@ -173,7 +173,55 @@
                 </div>
               </div>
 
-              <!-- Кнопка отправки -->
+              <!-- Ряд: Способ оплаты (Радиокнопки) -->
+              <div class="order-form__group">
+                <span class="order-form__label">Способ оплаты</span>
+                <div class="order-form__radio-group">
+                  <div class="order-form__radio-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      id="pay-card"
+                      value="card"
+                      class="order-form__radio"
+                      checked
+                    />
+                    <label for="pay-card" class="order-form__radio-label">
+                      <span class="order-form__radio-text"
+                        >💳 Картой на сайте</span
+                      >
+                    </label>
+                  </div>
+
+                  <div class="order-form__radio-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      id="pay-cash"
+                      value="cash"
+                      class="order-form__radio"
+                    />
+                    <label for="pay-cash" class="order-form__radio-label">
+                      <span class="order-form__radio-text"
+                        >💵 Курьеру при получении</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Блок: Дополнительные опции (Кастомный чекбокс) -->
+              <div class="order-form__group order-form__group--checkbox">
+                <input
+                  type="checkbox"
+                  id="contactless"
+                  class="order-form__checkbox"
+                />
+                <label for="contactless" class="order-form__checkbox-label">
+                  😷 Оставить у двери (бесконтактная доставка)
+                </label>
+              </div>
+
               <button type="submit" class="order-form__submit-btn">
                 Посчитать стоимость
               </button>
