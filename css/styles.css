@@ -487,3 +487,65 @@ body {
 .order-form__checkbox:focus + .order-form__checkbox-label::before {
   box-shadow: 0 0 0 3px rgba(25, 25, 25, 0.05);
 }
+
+.steps {
+  padding: 100px 0;
+  background-color: var(--bg-main);
+  border-top: 1px solid var(--border-light);
+}
+
+.steps__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.steps__subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+/* Контейнер для шагов */
+.steps__grid {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Карточка отдельного шага */
+.step-item {
+  /* Делим строку ровно на 3 колонки */
+  flex: 1 1 calc(33.333% - 27px);
+  /* Чтобы на мобилках они красиво падали друг под друга */
+  min-width: 280px;
+}
+
+/* Огромная стильная цифра шага */
+.step-item__number {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text-main);
+  opacity: 0.15;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.step-item__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.step-item__text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
