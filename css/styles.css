@@ -6,6 +6,10 @@
   --accent-purple: #5c5cd6; /* Мягкий фиолетовый акцент для кнопок */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -663,3 +667,73 @@ body {
   background-color: #333;
 }
 /* couriers - finished */
+
+.footer {
+  padding: 80px 0 40px;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-light);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__top {
+  margin-bottom: 32px;
+}
+
+.footer__logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.footer__tagline {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Контейнер для капсул */
+.footer__socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Базовый стиль интерактивной капсулы */
+.footer__capsule {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  border: 1px solid var(--border-light);
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Общий ховер для всех капсул */
+.footer__capsule:hover {
+  background-color: #f0f0f0;
+  border-color: #dcdcdc;
+  transform: translateY(-1px);
+}
+
+/* Выделяем Telegram фирменным фиолетовым акцентом Notion при наведении */
+.footer__capsule--tg:hover {
+  background-color: #f0f0ff;
+  border-color: rgba(92, 92, 214, 0.3);
+  color: var(--accent-purple);
+}
