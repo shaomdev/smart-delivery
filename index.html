@@ -271,6 +271,63 @@
           </div>
         </div>
       </section>
+
+      <!-- section - couriers -->
+      <section class="couriers" id="couriers">
+        <div class="container">
+          <div class="couriers__inner">
+            <div class="couriers__content">
+              <h2 class="couriers__title">Станьте курьером SmartDelivery</h2>
+              <p class="couriers__text">
+                Работайте на своем авто, самокате или пешком. Гибкий график,
+                еженедельные выплаты и умное приложение, которое само строит
+                оптимальные маршруты.
+              </p>
+              <div class="couriers__benefits">
+                <span class="courier-tag">💰 До 8000₽ в день</span>
+                <span class="courier-tag">📅 Свободный график</span>
+                <span class="courier-tag">📱 Удобный навигатор</span>
+              </div>
+
+              <!-- НАСТОЯЩАЯ ФОРМА ДЛЯ КУРЬЕРА (Вместо старой ссылки) -->
+              <form class="courier-form">
+                <div class="courier-form__row">
+                  <input
+                    type="text"
+                    id="courier-name"
+                    class="courier-form__input"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    id="courier-phone"
+                    class="courier-form__input"
+                    placeholder="+7 (999) 999-99-99"
+                    required
+                  />
+
+                  <select
+                    id="courier-transport"
+                    class="courier-form__input courier-form__select"
+                    required
+                  >
+                    <option value="" disabled selected hidden>
+                      Транспорт...
+                    </option>
+                    <option value="foot">🚶‍♂️ Пешком / Самокат</option>
+                    <option value="bike">🚴‍♂️ Велосипед</option>
+                    <option value="car">🚗 Автомобиль</option>
+                  </select>
+                </div>
+                <button type="submit" class="courier-form__btn">
+                  Отправить анкету
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
