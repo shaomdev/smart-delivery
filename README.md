@@ -49,11 +49,11 @@ smart-delivery/
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/shaomdev/smart-delivery.git
    ```
 2. Перейдите в папку проекта:
    ```bash
-   cd shaomdev-portfolio
+   cd smart-delivery
    ```
 3. Откройте файл `index.html` в любом браузере (или используйте расширение **Live Server** в VS Code).
 
