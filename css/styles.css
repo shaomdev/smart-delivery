@@ -737,3 +737,107 @@ body {
   border-color: rgba(92, 92, 214, 0.3);
   color: var(--accent-purple);
 }
+
+/* ==========================================
+  АДАПТИВНАЯ ВЕРСТКА (BREAKPOINTS)
+  ========================================== */
+
+@media (max-width: 768px) {
+  .header__inner {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .nav__list {
+    gap: 16px;
+  }
+
+  .header__actions {
+    width: 50%;
+  }
+
+  .header__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .hero__btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .features,
+  .steps,
+  .order,
+  .couriers {
+    padding: 60px 0;
+  }
+
+  .steps__subtitle,
+  .order__subtitle {
+    margin-bottom: 32px;
+  }
+
+  .courier-form__row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .courier-form__input {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 60px 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__actions,
+  .hero__actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .feature-card,
+  .order-form {
+    padding: 25px;
+  }
+
+  .order-form__row,
+  .order-form__radio-group {
+    flex-direction: column;
+  }
+
+  .order-form__checkbox-label::after {
+    top: 15px;
+  }
+}
+
+@media (max-width: 344px) {
+  .nav__list {
+    gap: 9px;
+  }
+}
