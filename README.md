@@ -43,11 +43,29 @@ smart-delivery/
 
 ---
 
+## 💻 Локальный запуск (Local Setup)
+
+Если вы хотите запустить проект на своем компьютере:
+
+1. Склонируйте репозиторий:
+   ```bash
+   git clone https://github.com
+   ```
+2. Перейдите в папку проекта:
+   ```bash
+   cd shaomdev-portfolio
+   ```
+3. Откройте файл `index.html` в любом браузере (или используйте расширение **Live Server** в VS Code).
+
+---
+
 ## ✍️ Автор
 
 Разработчик: **shaomdev**
 
 - GitHub: [@shaomdev](https://github.com/shaomdev)
 - Портфолио: [shaomdev-portfolio](https://shaomdev.github.io/shaomdev-portfolio/)
+
+---
 
 **⭐ Если проект тебе понравился, звезду в левый верхний угол :)** 😊
